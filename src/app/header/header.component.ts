@@ -22,6 +22,14 @@ export class HeaderComponent implements OnInit {
     });
     /* ================== Open first sub menu on top menu hover Ends ================= */
 
+    /* ================= Scroll-To-Top Starts ================ */
+    $('.scroll-to-top').click(function(e) {
+      e.stopPropagation();
+      e.preventDefault();
+      $('body, html').animate({'scrollTop': 0}, 1000);
+    });
+    /* ================== Scroll-To-Top Ends ================= */
+
     $('.menu').click(function(e) {
       if($('.nav > ul').is(':visible')) {
         $('.nav > ul').css('display', 'none');
