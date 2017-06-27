@@ -1,0 +1,154 @@
+a{
+  @include transition(0.5s);
+}
+
+::-moz-selection { background: $color-pink; color: #fff; }
+::selection { background: $color-pink; color: #fff; }
+
+::-webkit-input-placeholder {
+  color: #000; opacity: 1;}
+::-moz-placeholder {
+  color: #000; opacity: 1;}
+:-ms-input-placeholder {
+  color: #000; opacity: 1;}
+:-moz-placeholder {
+  color: #000; opacity: 1;}
+
+a {
+  &:focus {
+    outline: none;
+  }
+}
+html {
+  height: 100%;
+}
+body {
+  height: 100%;
+  font-family: $body-font;
+  font-size: 16px;
+  color: #333333;
+  font-weight: 400;
+  line-height: 22px;
+}
+h1 {
+  font-family: $heading-font;
+}
+h2 {
+  font-family: $heading-font;
+  font-size: 45px;
+  font-weight: 300;
+  color: $heading-color;
+  margin: 0 0 2px;
+  line-height: 40px;
+  text-transform: uppercase;
+  span {
+    font-weight: 700;
+  }
+}
+h3 {
+  font-family: $heading-font;
+}
+h4 {
+  font-family: $heading-font;
+}
+h5 {
+  font-family: $heading-font;
+}
+h6 {
+  font-family: $heading-font;
+  font-size: 16px;
+  font-weight: 400;
+  color: #878787;
+  margin: 0 0 24px;
+  line-height: 21px;
+}
+.margin-top-25 {
+  margin-top: 25px;
+}
+.padding-bottom-none{
+  padding-bottom:0px !important;
+}
+.padding-top-none{
+  padding-top:0px !important;
+}
+.margin-bottom-none{
+  margin-bottom:0px !important;
+}
+.margin-top-none{
+  margin-top:0px !important;
+}
+img {
+  max-width: 100%;
+}
+.button {
+  @include border-radius(2px); 
+  font-size: 14px;
+  color: #fff;
+  text-transform: uppercase;
+  height: 52px;
+  line-height: 52px;
+  text-align: center;
+  font-weight: normal;
+  letter-spacing: 2px;
+  background: $color-pink;
+  display: inline-block;
+  width: 190px;
+  &:hover {
+    background: #cacaca;
+    color: #4d4d4d;
+    text-decoration: none;
+  }
+  &:focus {
+    background: #cacaca;
+    color: #4d4d4d;
+    text-decoration: none;
+  }
+}
+
+
+@media only screen and (min-width:768px) and (max-width:991px) {
+  h2 {
+    font-size: 28px;
+    line-height: 33px;
+  }
+  body {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width:767px) {
+  h2 {
+    font-size: 25px;
+    line-height: 30px;
+  }
+  body {
+    font-size: 16px;
+    line-height: 25px;
+  }
+  .button {
+    width: auto;
+    padding: 0 15px;
+    height: 40px;
+    line-height: 40px;
+  }
+  p {
+    margin-bottom: 0px;
+  }
+  .request-btn {
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    z-index: 999;
+    i {
+      background: $color-pink none repeat scroll 0 0;
+      display: block;
+      float: left;
+      font-size: 27px;
+      height: 40px;
+      line-height: 40px;
+      text-align: center;
+      width: 40px;
+      color: #fff;
+    }
+  }
+}

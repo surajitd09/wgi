@@ -1,0 +1,41 @@
+// Brand Identity Page Style
+
+@import '../../sass-components/variables';
+@import '../../sass-components/mixins';
+@import '../../sass-components/extends';
+@import '../../sass-components/common';
+
+#brand-identity-page{
+
+	@extend .inner-page-banner-extend;
+	@extend .intro-extend;
+	@extend .btn-group-extend;
+	@extend .services-extend;
+	@extend .call-us-extend;
+	@extend .choose-us-extend;
+	@extend .portfolio-extend;
+	@extend .order-row-extend;
+	@extend .newsletter-extend;	
+
+	.brand-identity-banner{ 
+		background:url(../../assets/images/brand-identity/brand-identity-bg.jpg) no-repeat right 0 #372163;
+	}
+
+	.why-choose-sec h2{ 
+		text-transform:none; 
+		font-weight:800; 
+		font-size:30px;
+		margin-bottom: 43px;
+	}
+	.portfolio-sec{
+		padding-bottom: 50px;
+	}
+	.portfolio-sec h2{ 
+		text-transform:none; 
+		font-weight:800; 
+		font-size:30px;
+		margin-bottom: 43px;
+	}
+
+
+}

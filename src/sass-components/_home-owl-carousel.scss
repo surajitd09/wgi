@@ -1,0 +1,12 @@
+
+.mob-app-slide .owl-dots{ display: none; }
+.mob-app-slide .owl-theme .owl-nav .owl-prev{ position: absolute; top: 50%; left: -50px; width: 20px; height: 20px; background: url(assets/images/common/mob-arrow-left.png) no-repeat center; margin-top: -10px; text-indent: -9999px;}
+.mob-app-slide .owl-theme .owl-nav .owl-next{ position: absolute; top: 50%; right: -50px; width: 20px; height: 20px; background: url(assets/images/common/mob-arrow-right.png) no-repeat center; margin-top: -10px; text-indent: -9999px;}
+
+
+.testi-inner .owl-nav{ display: none; }
+.testi-inner .owl-dots{ width: 100%; text-align: center; padding-top: 30px; }
+.testi-inner .owl-dots .owl-dot{ width: 5px; height: 5px; background: #fff; display: inline-block; margin: 5px 3px; -webkit-border-radius: 2px; -moz-border-radius: 2px; border-radius: 2px;}
+.testi-inner .owl-dots .owl-dot.active{ height: 15px; margin: 0px 3px; background: #8155d5; -webkit-box-shadow: 0px 0px 7px 0px rgba(129, 83, 213, 0.75); -moz-box-shadow: 0px 0px 7px 0px rgba(129, 83, 213, 0.75); box-shadow: 0px 0px 7px 0px rgba(129, 83, 213, 0.75); }
+
+.owl-theme .owl-dots .owl-dot span {display: none;}

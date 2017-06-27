@@ -1,1 +1,7 @@
-/* You can add global styles to this file, and also import other style files */
+@import './sass-components/variables';
+@import './sass-components/mixins';
+@import './sass-components/extends';
+
+@import './sass-components/common';
+
+@import './sass-components/home-owl-carousel';

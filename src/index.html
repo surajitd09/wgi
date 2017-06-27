@@ -1,14 +1,131 @@
-<!doctype html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <title>Wgi</title>
-  <base href="/">
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">    
 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <title>Webguru Infosystems</title>
+    <base href="/">
+
+    <link rel="icon" href="./favicon.png" type="image/png" sizes="16x16">
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Yantramanav:100,300,400,500,700,900" rel="stylesheet"> 
+
+    
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+   
 </head>
 <body>
-  <app-root>Loading...</app-root>
+  <app-root>
+    
+  </app-root>
+
+  <style>
+
+    @-webkit-keyframes pre-loader-spin {
+      0% {
+        -webkit-transform: translateX(-50%) translateY(-50%) rotate(0deg);
+        -moz-transform: translateX(-50%) translateY(-50%) rotate(0deg);
+        -o-transform: translateX(-50%) translateY(-50%) rotate(0deg);
+        -ms-transform: translateX(-50%) translateY(-50%) rotate(0deg);
+        transform: translateX(-50%) translateY(-50%) rotate(0deg);
+      }
+      100% {
+        -webkit-transform: translateX(-50%) translateY(-50%) rotate(360deg);
+        -moz-transform: translateX(-50%) translateY(-50%) rotate(360deg);
+        -o-transform: translateX(-50%) translateY(-50%) rotate(360deg);
+        -ms-transform: translateX(-50%) translateY(-50%) rotate(360deg);
+        transform: translateX(-50%) translateY(-50%) rotate(360deg);
+      }
+    }
+    @keyframes pre-loader-spin {
+      0% {
+        -webkit-transform: translateX(-50%) translateY(-50%) rotate(0deg);
+        -moz-transform: translateX(-50%) translateY(-50%) rotate(0deg);
+        -o-transform: translateX(-50%) translateY(-50%) rotate(0deg);
+        -ms-transform: translateX(-50%) translateY(-50%) rotate(0deg);
+        transform: translateX(-50%) translateY(-50%) rotate(0deg);
+      }
+      100% {
+        -webkit-transform: translateX(-50%) translateY(-50%) rotate(360deg);
+        -moz-transform: translateX(-50%) translateY(-50%) rotate(360deg);
+        -o-transform: translateX(-50%) translateY(-50%) rotate(360deg);
+        -ms-transform: translateX(-50%) translateY(-50%) rotate(360deg);
+        transform: translateX(-50%) translateY(-50%) rotate(360deg);
+      }
+    }
+
+
+    .pre-loader {
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      background: #2d2d2d;
+      z-index: 9999999;
+    }
+
+    .pre-loader > div {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      -webkit-transform: translateX(-50%) translateY(-50%);
+      -moz-transform: translateX(-50%) translateY(-50%);
+      -o-transform: translateX(-50%) translateY(-50%);
+      -ms-transform: translateX(-50%) translateY(-50%);
+      transform: translateX(-50%) translateY(-50%);
+      background-color: transparent;
+      border: 5px solid #2d2d2d;
+      border-radius: 50%;
+      animation-name: pre-loader-spin;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+    }
+
+    .pre-loader > div.blue {
+      border-top-color: #00a0c6;
+      border-right-color: #00a0c6;
+      width: 70px;
+      height: 70px;
+      animation-duration: 2s;
+    }
+    .pre-loader > div.pink {
+      border-top-color: #f0037f;
+      border-left-color: #f0037f;
+      width: 100px;
+      height: 100px;
+      animation-duration: 1s;
+    }
+    .pre-loader > div.yellow {
+      border-top-color: #ffb300;
+      border-right-color: #ffb300;
+      border-bottom-color: #ffb300;
+      width: 130px;
+      height: 130px;
+      animation-duration: 1.5s;
+    }
+  </style>
+
+  <div class="pre-loader">
+    <div class="blue"></div>
+    <div class="pink"></div>
+    <div class="yellow"></div>
+  </div>
 </body>
 </html>
