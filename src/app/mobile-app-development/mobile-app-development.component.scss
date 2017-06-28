@@ -1,0 +1,66 @@
+// Mobile App Development Style
+
+@import '../../sass-components/variables';
+@import '../../sass-components/mixins';
+@import '../../sass-components/extends';
+@import '../../sass-components/common';
+
+#mobile-app-development-page{
+
+	@extend .inner-page-banner-extend;
+	@extend .intro-extend;
+	@extend .btn-group-extend;
+	@extend .services-extend;
+	@extend .call-us-extend;
+	@extend .choose-us-extend;
+	@extend .portfolio-extend;
+	@extend .order-row-extend;
+	@extend .newsletter-extend;
+	@extend .blog-extend;
+	@extend .certificates-extend;
+
+	h2{
+		color: #052033;
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 0;
+    text-transform: none;
+	}
+
+	.mobile-app-banner{ 
+		background:url(../assets/images/mobile-app-development/mobile-app-banner-bg.jpg) no-repeat 0 0 #372163;		
+	}
+
+	.services-section{		
+		.heading-content-holder{
+			padding-bottom: 30px;
+			h2{
+				margin-bottom: 13px;
+			}
+		}
+	}	
+
+	.video-holder{
+		background:#dfdfdf; 
+		padding:15px;
+	}
+	.services-section{
+		.service-block{
+			padding-bottom:35px;
+		}
+	 h2{ margin-bottom:35px;}	 
+	}
+
+	
+	.portfolio-sec{
+		background-color: #f7f7f7; 
+		padding-bottom: 50px;
+	}
+	.business-benefits{
+		background: #f3f3f3;
+	}
+	.newsletter-sec{
+		background: #f3f3f3;
+	}
+
+}

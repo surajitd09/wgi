@@ -12,6 +12,7 @@ import { HomeComponent } from './home/home.component';
 import { PageNotFoundComponent } from './404/404.component';
 import { BrandIdentityComponent } from './brand-identity/brand-identity.component';
 import { DigitalMarketingComponent } from './digital-marketing/digital-marketing.component';
+import { MobileAppDevelopmentComponent } from './mobile-app-development/mobile-app-development.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { DigitalMarketingComponent } from './digital-marketing/digital-marketing
     HomeComponent,
     PageNotFoundComponent,
     BrandIdentityComponent,
-    DigitalMarketingComponent
+    DigitalMarketingComponent,
+    MobileAppDevelopmentComponent
   ],
   imports: [
     BrowserModule,
