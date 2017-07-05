@@ -119,6 +119,7 @@
 				line-height: 18px; 
 				display: block; 
 				padding-top: 12px;
+				@include transition(0.3s);
 			}
 
 			strong { 
@@ -126,6 +127,36 @@
 				line-height: 
 				17px; 
 				display: block;
+				@include transition(0.3s);
+			}
+
+			$colors: #fd6b00, #0871ff, #a013e1, #a6800a;
+			@each $color in $colors {
+    		$i: index($colors, $color);
+				&:nth-child(#{$i}) {
+					&:hover {
+						span {
+							@include transform-mixin(translateX(-5px));
+							color: $color;
+						}
+					}
+				}
+				&:nth-child(#{$i}) {
+					animation-name: banner-bottom-anim;
+					animation-duration: 1s;
+					animation-delay: 3s+(0.3*($i - 1));
+					animation-fill-mode: forwards;
+
+					i { 
+						background-color: $color;
+					}
+				}
+			}
+
+			&:hover {
+				strong { 
+					@include transform-mixin(translateX(-5px));
+				}
 			}
 
 			i { 
@@ -135,50 +166,6 @@
 				line-height: 55px;  
 				float: left; 
 				margin-right: 12px;
-			}
-
-			&:first-child {
-				animation-name: banner-bottom-anim;
-				animation-duration: 1s;
-				animation-delay: 3s;
-				animation-fill-mode: forwards;
-
-				i { 
-					background-color: #fd6b00;
-				}
-			}
-
-			&:nth-child(2) {
-				animation-name: banner-bottom-anim;
-				animation-duration: 1s;
-				animation-delay: 3.3s;
-				animation-fill-mode: forwards;
-				
-				i { 
-					background-color: #0871ff;
-				}
-			}
-
-			&:nth-child(3) {
-				animation-name: banner-bottom-anim;
-				animation-duration: 1s;
-				animation-delay: 3.6s;
-				animation-fill-mode: forwards;
-				
-				i { 
-					background-color: #a013e1;
-				}
-			}
-
-			&:nth-child(4) {
-				animation-name: banner-bottom-anim;
-				animation-duration: 1s;
-				animation-delay: 3.9s;
-				animation-fill-mode: forwards;
-				
-				i { 
-					background-color: #a6800a;
-				}
 			}
 
 			a{ 
@@ -663,7 +650,7 @@
 			@include transform-mixin(translate(-50%, -50%));
 			display: block;
 			//@include transition(0.3s);
-			max-width: 90%;
+			max-width: 75%;
 			opacity: 0;
 
 			&.active {

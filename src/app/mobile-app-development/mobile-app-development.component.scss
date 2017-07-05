@@ -18,6 +18,7 @@
 	@extend .newsletter-extend;
 	@extend .blog-extend;
 	@extend .certificates-extend;
+	@extend .get-support-extend;
 
 	h2{
 		color: #052033;
@@ -48,7 +49,12 @@
 		.service-block{
 			padding-bottom:35px;
 		}
-	 h2{ margin-bottom:35px;}	 
+	 h2{ 
+	 	margin-bottom:35px;
+	 	@media only screen and (max-width:767px){
+			margin-bottom: 20px;
+		}
+	 }
 	}
 
 	.tech-mob-solutions{
@@ -57,6 +63,9 @@
 			color: $color-pink;
 			margin-bottom: 16px;
 			margin-top: 0px;
+			@media only screen and (max-width:767px){
+				margin-bottom: 5px;
+			}
 		}
 		ul{
 			list-style: none;
@@ -67,6 +76,9 @@
 				padding-left:10px;
 				background:url(assets/images/common/bullet.png) no-repeat 0 9px;
 				padding-bottom:10px;
+				@media only screen and (max-width:767px){
+					padding-bottom:5px;
+				}
 				a{
 					font-size: 15px;
 					color: #2c2c2c;
@@ -76,7 +88,7 @@
 					}
 				}
 			}
-		}
+		}		
 	}
 
 	.development-process-sec{
@@ -111,5 +123,20 @@
 	.newsletter-sec{
 		background: #f3f3f3;
 	}
+
+
+	.tech-mob-app-sec{
+		.tech-mob-solutions{
+			@media only screen and (max-width:767px){
+				margin-bottom: 20px;
+			}
+			&:last-child{
+				margin-bottom: 0px;
+			}
+		}
+
+	}
+	
+
 
 }
