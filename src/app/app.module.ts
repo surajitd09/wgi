@@ -13,6 +13,7 @@ import { PageNotFoundComponent } from './404/404.component';
 import { BrandIdentityComponent } from './brand-identity/brand-identity.component';
 import { DigitalMarketingComponent } from './digital-marketing/digital-marketing.component';
 import { MobileAppDevelopmentComponent } from './mobile-app-development/mobile-app-development.component';
+import { CmsDevelopmentComponent } from './cms-development/cms-development.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { MobileAppDevelopmentComponent } from './mobile-app-development/mobile-a
     PageNotFoundComponent,
     BrandIdentityComponent,
     DigitalMarketingComponent,
-    MobileAppDevelopmentComponent
+    MobileAppDevelopmentComponent,
+    CmsDevelopmentComponent
   ],
   imports: [
     BrowserModule,

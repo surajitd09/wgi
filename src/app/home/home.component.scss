@@ -642,6 +642,13 @@
 		overflow: hidden;
 		top: 28%;
     left: 18%;
+    @media only screen and (min-width:992px) and (max-width:1199px){    	
+    	width: 38%;
+    }
+    @media only screen and (min-width:767px) and (max-width:991px){
+    	height: 40.5%;
+    	width: 38%;
+    }
 
 		img {
 			position: absolute;

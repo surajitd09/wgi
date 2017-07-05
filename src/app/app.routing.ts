@@ -5,6 +5,7 @@ import { HomeComponent }  from './home/home.component';
 import { BrandIdentityComponent }  from './brand-identity/brand-identity.component';
 import { DigitalMarketingComponent }  from './digital-marketing/digital-marketing.component';
 import { MobileAppDevelopmentComponent } from './mobile-app-development/mobile-app-development.component';
+import { CmsDevelopmentComponent } from './cms-development/cms-development.component';
 import { PageNotFoundComponent } from './404/404.component';
 
 const routes: Routes = [
@@ -13,6 +14,7 @@ const routes: Routes = [
 	{path: 'brand-identity', component: BrandIdentityComponent},
 	{path: 'digital-marketing', component: DigitalMarketingComponent},
 	{path: 'mobile-app-development', component: MobileAppDevelopmentComponent},
+	{path: 'cms-development', component: CmsDevelopmentComponent},
 	{path: '**', component: PageNotFoundComponent}
 ];
 
@@ -30,5 +32,6 @@ export const AppRoutingComponents = [
 	HomeComponent,
 	BrandIdentityComponent,
 	DigitalMarketingComponent,
-	MobileAppDevelopmentComponent
+	MobileAppDevelopmentComponent,
+	CmsDevelopmentComponent
 ];

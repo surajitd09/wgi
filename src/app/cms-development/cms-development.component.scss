@@ -1,0 +1,47 @@
+// CMS Development Style
+
+@import '../../sass-components/variables';
+@import '../../sass-components/mixins';
+@import '../../sass-components/extends';
+@import '../../sass-components/common';
+
+#mobile-app-development-page{
+
+	@extend .inner-page-banner-extend;
+	@extend .intro-extend;
+	@extend .btn-group-extend;
+	@extend .services-extend;
+	@extend .call-us-extend;
+	@extend .portfolio-extend;
+	@extend .order-row-extend;
+	@extend .newsletter-extend;
+	@extend .blog-extend;
+	@extend .get-support-extend;
+
+	h2{
+		color: #052033;
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 0;
+    text-transform: none;
+	}
+
+	.mobile-app-banner{ 
+		background-image:url(../../assets/images/common/inner-page-banner-bg.jpg);
+	}
+
+	.portfolio-sec{
+		padding-bottom: 50px;
+	}
+	.portfolio-sec h2{ 
+		text-transform:none; 
+		font-weight:800; 
+		font-size:30px;
+		margin-bottom: 43px;
+	}
+
+	.newsletter-sec{
+		background-color:#f3f3f3;
+	}
+
+}
