@@ -18,7 +18,7 @@ export class HeaderComponent implements OnInit {
 
     $('.nav-dropdown').find('.sub-menu').children('li').mouseover(function(e) {
       e.stopPropagation();
-      $('.nav-dropdown').find('.sub-menu').children('li').eq(0).find('ul').css('display', '');
+      $(this).closest('.nav-dropdown').find('.sub-menu').children('li').eq(0).find('ul').css('display', '');
     });
     /* ================== Open first sub menu on top menu hover Ends ================= */
 

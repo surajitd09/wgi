@@ -13,15 +13,26 @@
 		h2 {
 			margin-bottom: 55px;
 			@media only screen and (min-width:768px) and (max-width:991px){
-			margin-bottom: 30px;
-			font-size: 28px;
+				margin-bottom: 30px;
+				font-size: 28px;
 			}
 			@media only screen and (max-width:767px){
 				margin-bottom: 30px;
 				font-size: 25px;
 			}
 		}
-
+		&.inner-page-why-choose{
+			h2{
+				@media only screen and (min-width:767px) and (max-width:992px){
+					font-size: 28px;
+					margin-bottom: 30px;
+				}
+				@media only screen and (max-width:767px){
+					font-size: 25px;
+					margin-bottom: 20px;
+				}
+			}
+		}
 	}
 	.why-us-pnl {
 		padding-right: 0px;
@@ -102,27 +113,7 @@
 			overflow: hidden;
 			padding-left: 16px;
 		}
-	}
-	@media only screen and (min-width:767px) and (max-width:992px){
-		.why-choose-sec{
-			&.inner-page-why-choose{
-				h2{
-					font-size: 28px;
-					margin-bottom: 30px;
-				}
-			}
-		}
-	}
-	@media only screen and (max-width:767px){
-		.why-choose-sec{
-			&.inner-page-why-choose{
-				h2{
-					font-size: 25px;
-					margin-bottom: 20px;
-				}
-			}
-		}
-	}
+	}	
 }
 
 
@@ -131,9 +122,23 @@
 	.portfolio-sec{ 
 		padding: 50px 0 20px; 
 		text-align: center;
+		@media only screen and (min-width:768px) and (max-width:991px){
+			padding:30px 0 30px 0;
+		}
+		@media only screen and (max-width:767px){
+			padding: 30px 0 0;
+		}
 		h2{ 
 			text-align: center; 
-			margin-bottom: 40px; 
+			margin-bottom: 40px;
+			@media only screen and (min-width:768px) and (max-width:991px){
+				margin-bottom: 25px;
+				font-size: 28px;
+			}
+			@media only screen and (max-width:767px){
+				margin-bottom: 20px;
+				font-size: 25px;
+			}
 		}
 		.project-tab{
 			.project-tab-cont-inr{ 
@@ -141,10 +146,12 @@
 				border:4px solid transparent; 
 				margin-bottom: 30px;
 				@include transition(0.3s);
+				@media only screen and (max-width:767px){
+					margin-bottom: 10px;
+				}
 				img{ 
 					width: 100%; 
 				}
-
 				.overlay{ 
 					position: absolute; 
 					top: 50%; 
@@ -158,6 +165,9 @@
 					height: 60px; 
 					margin-top: -30px; 
 					align-items: center;
+					@media only screen and (min-width:768px) and (max-width:991px){
+						padding-top: 35px;
+					}
 
 					a{ 
 						display: inline-block; 
@@ -168,15 +178,22 @@
 						width: 100%; 
 						text-align: center; 
 						text-decoration: none !important;
-
+						@media only screen and (min-width:768px) and (max-width:991px){
+							font-size: 12px;
+						}
+						@media only screen and (max-width:767px){
+							font-size:14px;
+						}
 						&:hover{
 							color: #fff; 
 							text-decoration: none;
 						}
-
 						span{ font-size: 24px; 
 							font-weight: bold; 
-							text-transform: uppercase; 
+							text-transform: uppercase;
+							@media only screen and (max-width:767px){
+								font-size: 16px;
+							}
 						}
 					}
 				}
@@ -195,8 +212,27 @@
 			}
 		}
 		&.inner-page-portfolio{
+			@media only screen and (min-width:768px) and (max-width:991px){
+				padding-bottom: 30px;
+			}
+			@media only screen and (max-width:767px){
+				padding-bottom: 30px;
+			}
+			h2{
+				@media only screen and (min-width:768px) and (max-width:991px){
+					margin-bottom: 25px;
+					font-size: 28px;
+				}
+				@media only screen and (max-width:767px){
+					margin-bottom: 20px;
+					font-size: 25px;
+				}
+			}
 			.project-tab{
 				.project-tab-cont-inr{
+					@media only screen and (min-width:768px) and (max-width:991px){
+						margin-bottom: 0px;
+					}
 					.overlay{
 						height: auto;
 						margin-top: 0px;
@@ -217,75 +253,6 @@
 			}
 		}
 	}
-
-	@media only screen and (min-width:768px) and (max-width:991px){
-		.portfolio-sec{
-			padding:30px 0 30px 0; 
-			h2{
-				margin-bottom: 25px;
-				font-size: 28px;
-			}
-			.project-tab{
-				.project-tab-cont-inr {
-					.overlay {
-						padding-top: 35px;
-						h3 {
-							font-size: 18px;
-							margin-bottom: 10px;
-						}
-						a {
-							font-size: 12px;
-						}
-					}
-				}
-			}
-			&.inner-page-portfolio{
-				padding-bottom: 30px;
-				h2{
-					margin-bottom: 25px;
-					font-size: 28px;
-				}
-				.project-tab{
-					.project-tab-cont-inr{
-						margin-bottom: 0px;
-					}
-				}
-			}
-
-		}
-
-	}
-
-	@media only screen and (max-width:767px){
-		.portfolio-sec {
-			padding: 30px 0 0;
-			h2 {
-				margin-bottom: 20px;
-				font-size: 25px;
-			}
-			.project-tab{
-				.project-tab-cont-inr{
-					margin-bottom: 10px;
-					.overlay{
-						a{font-size:14px;
-							span{
-								font-size: 16px;
-							}
-						}						
-					}
-				}
-			}			
-			&.inner-page-portfolio{
-				padding-bottom: 30px;
-				h2{
-					margin-bottom: 20px;
-					font-size: 25px;
-				}
-			}
-		}
-	}
-
-
 }
 
 
@@ -296,14 +263,30 @@
 	.inner-page-banner{ 
 		min-height:400px; 
 		margin-top:100px; 
-		padding-top:100px;
-
+		padding-top:100px;		
+		background-color:#2f1b56;
+		background-position: center;
+		background-repeat:no-repeat;
+		@media only screen and (max-width:767px){
+			background-position: center;
+			background-size: cover !important;
+			padding: 30px 0;
+			min-height: inherit;
+			text-align: center;
+			margin-top: 80px;
+		}		
 			h1{ 
 				font-size:40px; 
 				color:#fff; 
 				font-weight:bold; 
 				text-transform:uppercase; 
 				margin-top:0px;
+				@media only screen and (min-width:768px) and (max-width:991px){
+					font-size: 30px;
+				}
+				@media only screen and (max-width:767px){
+					font-size: 25px;
+				}
 			}
 			p{ 
 				color:#eecbfe; 
@@ -312,16 +295,35 @@
 			}
 			.banner-inr{ 
 				padding:0 130px;
-
+				@media only screen and (min-width:992px) and (max-width:1199px){
+					padding: 0px;
+				}
+				@media only screen and (min-width:768px) and (max-width:991px){
+					padding: 0px;
+				}
+				@media only screen and (max-width:767px){
+					padding: 0px;
+				}
 				.banner-right-image{ 
 					text-align:right; 
 					padding-top:35px;
+					@media only screen and (max-width:767px){
+						padding: 0 0 30px 0;
+						text-align: center;
+					}
+					img{
+						@media only screen and (max-width:767px){
+							max-width: 100px;
+						}
+					}
 				}
 
 				.banner-left-content{ 
 					position: relative; 
 					min-height:235px;
-
+					@media only screen and (max-width:767px){
+						min-height: inherit;
+					}
 					ul{ 
 						list-style: none; 
 						margin:0px; 
@@ -330,6 +332,12 @@
 						left:15px; 
 						width:100%; 
 						bottom:0px;
+						@media only screen and (max-width:767px){
+							position: inherit;
+							bottom: inherit;
+							left: inherit;
+							margin: 15px 0 0;
+						}
 
 						li{ 
 							display: 
@@ -337,6 +345,9 @@
 							padding-right:25px;
 							font-size:14px; 
 							color:#fff;
+							@media only screen and (max-width:767px){
+								margin: 15px 0 0;
+							}
 
 							a{ 
 								color:#fff; 
@@ -368,79 +379,43 @@
 				}
 			}
 	}
-	@media only screen and (min-width:992px) and (max-width:1199px){
-		.inner-page-banner{
-			.banner-inr{
-				padding: 0px;
-			}
-		}
-	}
-	@media only screen and (min-width:768px) and (max-width:991px){
-		.inner-page-banner{
-			.banner-inr{
-				padding: 0px;
-				.banner-left-content{
-					h1{
-						font-size: 30px;
-					}
-				}
-			}
-		}
-	}
-	@media only screen and (max-width:767px){
-		.inner-page-banner{
-			background-position: center !important;
-			background-size: cover !important;
-			padding: 30px 0;
-			min-height: inherit;
-			text-align: center;
-			margin-top: 80px;
-			.banner-inr{
-				padding: 0px;
-				.banner-right-image{
-					padding: 0 0 30px 0;
-					text-align: center;
-				}
-				.banner-left-content{
-					min-height: inherit;
-					ul{
-						position: inherit;
-						bottom: inherit;
-						left: inherit;
-						margin: 15px 0 0;
-						li{
-							margin: 15px 0 0;
-						}
-					}
-					h1{
-						font-size: 25px;
-					}
-				}
-			}
-
-		}
-	}
-
 }
 
 // Inner Page Introduction Section
 .intro-extend{
-	.intro-sec{	padding:50px 0; background:#f2f2f2;
-		h2{ margin-top:0px; font-size:30px; color:#052033; font-weight:bold; text-transform:none; margin-bottom: 10px;}
-		h4{ font-size:20px; color:#2c2c2c; margin-bottom:28px;}
-	}	
-	@media only screen and (min-width:768px) and (max-width:991px){
-		.intro-sec{	padding:30px 0;
-			h2{font-size:28px;}
-			h4{ font-size:18px;}
+	.intro-sec{	
+		padding:50px 0; 
+		background:#f2f2f2;
+		@media only screen and (min-width:768px) and (max-width:991px){
+			padding:30px 0;
 		}
-	}
-	@media only screen and (max-width:767px){
-		.intro-sec{	padding:30px 0;
-			h2{font-size:25px;}
-			h4{ font-size:18px; margin-bottom: 20px}
-			.video-holder{
-				margin-top: 30px;
+		@media only screen and (max-width:767px){
+			padding:30px 0;
+		}
+		h2{ 
+			margin-top:0px; 
+			font-size:30px; 
+			color:#052033; 
+			font-weight:bold; 
+			text-transform:none; 
+			margin-bottom: 10px;
+			@media only screen and (min-width:768px) and (max-width:991px){
+				font-size:28px;
+			}
+			@media only screen and (max-width:767px){
+				font-size:25px;
+			}
+		}
+		h4{ 
+			font-size:20px; 
+			color:#2c2c2c; 
+			margin-bottom:28px;
+			@media only screen and (min-width:768px) and (max-width:991px){
+				font-size:18px;
+			}
+			@media only screen and (max-width:767px){
+				font-size:18px;
+				margin-bottom: 20px;
 			}
 		}
 	}
@@ -449,40 +424,69 @@
 // Inner Page button Group
 .btn-group-extend{
 	.btn-group{ list-style: none; margin:0px; padding:0px; margin-top:23px;
-		li{ display: inline-block; padding-right:10px;font-size:14px; color:#fff;
+		li{ 
+			display: inline-block; 
+			padding-right:10px;
+			font-size:14px; 
+			color:#fff;
+			@media only screen and (max-width:639px){
+				padding: 5px;
+			}
 			a.btn-individual{ padding:0 50px; height:50px; line-height:47px; font-size:14px; color:$color-pink; text-transform:uppercase; border:1px solid $color-pink; display:inline-block; @include border-radius(4px); text-decoration:none;
 				&:hover{background:$color-pink; border-color:$color-pink; color:$color-white;}
 			}
 			&:last-child{
 				padding-right:0px;
+				@media only screen and (max-width:639px){
+					padding-right:5px;
+				}
 			}
 		}
-	}
-	@media only screen and (max-width:639px){
-		.btn-group{
-			li{
-				padding: 5px;
-				&:last-child{padding-right:5px;}
-			}
-		}
-	}
+	}	
 }
-
 
 
 // Inner Page Service Section
 .services-extend{
-	.services-section{ padding:50px 0;
+	.services-section{ 
+		padding:50px 0;
+		@media only screen and (min-width:768px) and (max-width:991px){
+			padding:30px 0;
+		}
+		@media only screen and (max-width:767px){
+			padding:30px 0;
+		}
+		h2{
+			@media only screen and (min-width:768px) and (max-width:991px){
+				font-size: 28px;
+			}
+			@media only screen and (max-width:767px){
+				font-size: 25px;
+			}
+		}
 		.service-block{
 			padding-bottom:50px;
-
+			@media only screen and (max-width:767px){
+				padding-bottom: 30px !important;
+			}
 			h3{ font-size:21px; 
 				color:$color-pink; 
 				margin:0px 0 8px; 
 				font-weight:500;
 				display: inline-block;
 				width: 100%;
-				line-height: 30px;				
+				line-height: 30px;
+				@media only screen and (min-width:768px) and (max-width:991px){
+					font-size: 18px;
+					line-height: normal;
+				}
+				@media only screen and (max-width:767px){
+					font-size: 18px;
+					line-height: 40px;
+				}
+				@media only screen and (max-width:479px){
+					line-height: normal;
+				}				
 				img{
 					margin-right:10px;
 					float: left;
@@ -499,6 +503,10 @@
 			   font-size: 15px;
 			   letter-spacing: 0.5px;
 			   text-decoration: none;
+			   @media only screen and (max-width:767px){
+			   	margin-top: 20px;
+			   	display: inline-block;
+			   }
 
 			   &:hover{
 			   	color: $color-blue;
@@ -506,45 +514,6 @@
 			   
 			   i{ font-size:10px; font-weight:100;}
 			}
-		}
-	}	
-	@media only screen and (min-width:768px) and (max-width:991px){
-		.services-section{ 
-			padding:30px 0;
-			h2{
-				font-size: 28px;
-			}
-			.service-block{
-				h3{
-					font-size: 18px;
-					line-height: normal;
-				}
-			}
-		}
-	}
-	@media only screen and (max-width:767px){
-		.services-section{ 
-			padding:30px 0;
-			h2{
-				font-size: 25px;
-			}
-			.service-block{
-				padding-bottom: 30px !important;
-				h3{
-					font-size: 18px;
-					line-height: 40px;
-				}
-			}
-		}
-	}
-	@media only screen and (max-width:479px){
-		.services-section{
-			.service-block{
-				h3{
-					line-height: normal;
-				}
-			}
-			
 		}
 	}
 }
@@ -557,6 +526,12 @@
 		padding:22px 0;
 		text-align:left;
 		background-size:auto 100%;
+		@media only screen and (min-width:768px) and (max-width:992px){
+			background-position: center center important;
+		}
+		@media only screen and (max-width:767px){
+			background-position: center center important;
+		}
 
 		h3{
 			text-transform: uppercase;
@@ -565,6 +540,12 @@
 			margin: 0px;
 			font-family: $body-font;
 			font-weight: bold;
+			@media only screen and (min-width:992px) and (max-width:1199px){
+				font-size: 26px;					
+			}
+			@media only screen and (max-width:767px){
+				font-size: 25px;
+			}
 		}
 		p{
 			font-size: 18px;
@@ -595,26 +576,6 @@
 					background:$color-gray;
 					color:$color-pink;
 				}
-			}
-		}
-	}
-	@media only screen and (min-width:992px) and (max-width:1199px){
-		.call-us-sec{
-			h3{
-				font-size: 26px;
-			}
-		}
-	}	
-	@media only screen and (min-width:768px) and (max-width:992px){
-		.call-us-sec{
-			background-position: center center important;
-		}
-	}	
-	@media only screen and (max-width:767px){
-		.call-us-sec{
-			background-position: center center important;
-			h3{
-				font-size: 25px;
 			}
 		}
 	}
@@ -660,6 +621,12 @@
 	.newsletter-sec{
 		padding:60px 0;
 		text-align: center;
+		@media only screen and (min-width:768px) and (max-width:991px){
+			padding: 30px 0;
+		}
+		@media only screen and (max-width:767px){
+			padding: 25px 0;
+		}
 		ul{
 			list-style: none;
 			margin:0px;
@@ -672,6 +639,10 @@
 				text-transform: uppercase;
 				font-weight: bold;
 				padding:0 10px;
+				@media only screen and (max-width:767px){
+					width: 100%;
+					padding:5px 0;
+				}
 				input[type="text"]{
 					height: 49px;
 					padding:0 20px;
@@ -680,6 +651,16 @@
 					@include border-radius(3px);
 					border:1px solid #cfcfcf;
 					@include transition(0.5s);
+					@media only screen and (min-width:992px) and (max-width:1199px){
+						min-width: 400px;
+					}
+					@media only screen and (min-width:768px) and (max-width:991px){
+						min-width: 200px;
+					}
+					@media only screen and (max-width:767px){
+						min-width: 100%;
+						max-width: 500px;
+					}
 					&:focus{
 						outline:none;
 						border-color:$color-pink;
@@ -709,62 +690,53 @@
 				}
 			}
 		}
-	}
-	@media only screen and (min-width:992px) and (max-width:1199px){
-		.newsletter-sec{			
-			ul{
-				li{
-					input[type="text"]{
-						min-width: 400px;
-					}
-				}
-			}
-		}
-	}
-	@media only screen and (min-width:768px) and (max-width:991px){
-		.newsletter-sec{
-			padding: 30px 0;
-			ul{
-				li{
-					input[type="text"]{
-						min-width: 200px;
-					}
-				}
-			}
-		}
-	}
-	@media only screen and (max-width:767px){
-		.newsletter-sec{
-			padding: 25px 0;
-			ul{
-				li{
-					width: 100%;
-					padding:5px 0;
-					input[type="text"]{
-						min-width: 100%;
-						max-width: 500px;
-					}
-				}
-			}
-		}
-	}
+	}	
 }
 
 
 // Blog
 .blog-extend{
-	.blog-sec{	padding:50px 0; background:$color-white;
-		h2{ margin-top:0px; font-size:30px; color:#052033; font-weight:bold; text-transform:none;}
+	.blog-sec{	
+		padding:50px 0; 
+		background:$color-white;
+		@media only screen and (min-width:768px) and (max-width:991px){
+			padding: 30px 0;
+		}
+		@media only screen and (max-width:767px){
+			padding: 30px 0;
+		}
+		h2{ 
+			margin-top:0px; 
+			font-size:30px; 
+			color:#052033; 
+			font-weight:bold; 
+			text-transform:none;
+			@media only screen and (min-width:768px) and (max-width:991px){
+				font-size: 28px;
+			}
+			@media only screen and (max-width:767px){
+				font-size: 25px;
+			}
+		}
 		h4{ font-size:20px; color:#2c2c2c; margin-bottom:28px;}
 		.blog-inner{
 			padding: 30px 0 0 0;
+			@media only screen and (max-width:767px){
+				padding: 20px 0 30px;
+			}
 			h4{
 				margin: 0 0 10px;
+				@media only screen and (max-width:767px){
+					font-size: 18px;
+				}
 			}
 		}
 		.blog-image-holder{
 			border: 1px solid #ebebeb;
 			padding: 8px;
+			@media only screen and (max-width:767px){
+				margin: 15px 0;
+			}
 			img{
 				border: 4px solid #f3f3f3;
 				width: 100%;
@@ -772,31 +744,6 @@
 			}
 		}
 	}	
-	@media only screen and (min-width:768px) and (max-width:991px){
-		.blog-sec{
-			padding: 30px 0;
-			h2{
-				font-size: 28px;
-			}
-		}	
-	}
-	@media only screen and (max-width:767px){
-		.blog-sec{
-			padding: 30px 0;
-			h2{
-				font-size: 25px;
-			}
-			.blog-inner{
-				padding: 20px 0 30px;
-				h4{
-					font-size: 18px;
-				}
-			}
-			.blog-image-holder{
-				margin: 15px 0;
-			}
-		}	
-	}
 }
 
 
@@ -806,8 +753,20 @@
 		padding: 50px 0;
 		background: #f7f7f7;
 		text-align: center;
+		@media only screen and (min-width:768px) and (max-width:991px){
+			padding: 30px 0;
+		}
+		@media only screen and (max-width:767px){
+			padding: 30px 0;
+		}
 		h2{
 			margin: 0 0 30px 0;
+			@media only screen and (min-width:768px) and (max-width:991px){
+				font-size: 28px;
+			}
+			@media only screen and (max-width:767px){
+				font-size: 25px;
+			}
 		}
 		ul{
 			list-style: none;
@@ -817,29 +776,13 @@
 				display: inline-block;
 				border: 1px solid $color-gray;
 				margin: 0 8px;
+				@media only screen and (min-width:768px) and (max-width:991px){
+					margin: 5px;
+				}
+				@media only screen and (max-width:767px){
+					margin: 5px;
+				}
 			}
 		}
 	}	
-	@media only screen and (min-width:768px) and (max-width:991px){
-		.certificates-sec{
-			padding: 30px 0;
-			ul{
-				li{margin: 5px;}
-			}
-			h2{
-				font-size: 28px;
-			}
-		}
-	}
-	@media only screen and (max-width:767px){
-		.certificates-sec{
-			padding: 30px 0;
-			ul{
-				li{margin: 5px;}
-			}
-			h2{
-				font-size: 25px;
-			}
-		}
-	}
 }

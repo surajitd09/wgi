@@ -28,7 +28,7 @@
 	}
 
 	.mobile-app-banner{ 
-		background:url(../assets/images/mobile-app-development/mobile-app-banner-bg.jpg) no-repeat 0 0 #372163;		
+		background-image:url(../../assets/images/common/inner-page-banner-bg.jpg);
 	}
 
 	.services-section{		
@@ -49,6 +49,55 @@
 			padding-bottom:35px;
 		}
 	 h2{ margin-bottom:35px;}	 
+	}
+
+	.tech-mob-solutions{
+		h3{
+			font-size: 21px;
+			color: $color-pink;
+			margin-bottom: 16px;
+			margin-top: 0px;
+		}
+		ul{
+			list-style: none;
+			margin: 0px;
+			padding:0px;
+			li{
+				width: 100%;
+				padding-left:10px;
+				background:url(assets/images/common/bullet.png) no-repeat 0 9px;
+				padding-bottom:10px;
+				a{
+					font-size: 15px;
+					color: #2c2c2c;
+					&:hover{
+						text-decoration: none;
+						color: $color-pink;
+					}
+				}
+			}
+		}
+	}
+
+	.development-process-sec{
+		.development-process{
+			padding-bottom:35px;
+			padding-left:15px;
+			padding-right:15px;
+			.icon-holder{
+				float: left;
+				width: 65px;				
+			}
+			.content-holder{
+				overflow: hidden;
+					h3{
+						font-size: 21px;
+						color: $color-pink;
+						margin-bottom: 10px;
+						margin-top: 0px;
+				}				
+			}			
+		}
 	}
 
 	

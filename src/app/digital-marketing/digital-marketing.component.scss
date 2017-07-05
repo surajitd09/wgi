@@ -28,9 +28,7 @@
 	}
 
 	.digital-marketing-banner{ 
-		background:url(../assets/images/digital-marketing/digital-marketing-bg.jpg) no-repeat 0 0 #372163;
-
-		
+		background-image:url(../../assets/images/common/inner-page-banner-bg.jpg);
 	}
 
 	.video-holder{
@@ -65,7 +63,7 @@
 	 				position: relative;
 	 				padding-left:10px;
 	 				padding-right:15px;
-	 				background:url(../assets/images/digital-marketing/icon/icon7.png) no-repeat 0 9px;
+	 				background:url(../assets/images/common/bulet.png) no-repeat 0 9px;
 	 				a{
 	 					color: $color-pink;
 	 					font-family: $heading-font;

@@ -147,14 +147,14 @@ export class HomeComponent implements OnInit {
         //setRate
         //alert(winWidth);
         if(winWidth>767){
-          emitter.rate = new Proton.Rate(new Proton.Span(20, 20), new Proton.Span(0.000001));
+          emitter.rate = new Proton.Rate(new Proton.Span(3, 3), new Proton.Span(0.01));
         }else{
-          emitter.rate = new Proton.Rate(new Proton.Span(10, 10), new Proton.Span(0.000001));
+          emitter.rate = new Proton.Rate(new Proton.Span(3, 3), new Proton.Span(0.01));
         }
         //addInitialize
         emitter.addInitialize(new Proton.Position(new Proton.PointZone(0, 0)));
-        emitter.addInitialize(new Proton.Mass(6));
-        emitter.addInitialize(new Proton.Life(6));
+        emitter.addInitialize(new Proton.Mass(3));
+        emitter.addInitialize(new Proton.Life(5));
         emitter.addBehaviour(new Proton.Alpha(1, 0));
 
 
@@ -286,25 +286,28 @@ export class HomeComponent implements OnInit {
   ngAfterContentInit() {
     this.msdLazyLoad.calcWidthHeight();
 
-    $('.owl-carousel').owlCarousel({
-      loop:true,
-      margin:10,
-      nav:true,
-      pagination:true,
-      autoplay:true,
-      lazyLoad:true,
-      autoplayTimeout:3000,
-      responsive:{
-        0:{
-          items:1
-        },
-        600:{
-          items:1
-        },
-        1000:{
-          items:1
+    $('.owl-carousel').each(function(index, value) {
+      let dataDelay = typeof $(this).attr('data-delay') !== 'undefined' ? $(this).attr('data-delay') : 3000;
+      $(this).owlCarousel({
+        loop:true,
+        margin:10,
+        nav:true,
+        pagination:true,
+        autoplay:true,
+        lazyLoad:true,
+        autoplayTimeout:dataDelay,
+        responsive:{
+          0:{
+            items:1
+          },
+          600:{
+            items:1
+          },
+          1000:{
+            items:1
+          }
         }
-      }
+      });
     });
   }
 
